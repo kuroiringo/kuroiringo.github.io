@@ -1078,19 +1078,6 @@ color
 .post-list li:hover a {
   color: #88acdb;
 }
-.ui-tooltip {
-  padding: 6px;
-  max-width: 30em;
-  -webkit-box-shadow: 0 0 0.8em rgba(0,0,0,0.6);
-  box-shadow: 0 0 0.8em rgba(0,0,0,0.6);
-  color: #fff;
-  font-family: "Lucida Grande", Verdana, "Helvetica Neue", Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
-  font-size: 0.9em;
-  background: rgba(0,0,0,0.65);
-}
-body .ui-tooltip {
-  border: 1px solid #fff;
-}
 .article-entry ul > li,
 .share,
 .article-category::before,
@@ -1485,20 +1472,9 @@ body .ui-tooltip {
 .article-entry li ol {
   margin-left: 30px;
 }
-.article-entry ul > li:before {
-  content: "";
-  background: #dedede;
-}
-.article-entry ul > li:before {
-  display: inline-block;
-  content: "";
-  width: 0.4em;
-  height: 0.4em;
-  margin-right: 0.5em;
-  margin-bottom: 0.11em;
-  border: 1px solid #d3d3d3;
-  border-radius: 50%;
-  background: #d3d3d3;
+.article-entry ul > li {
+  margin-left: 1.1em;
+  list-style-type: disc;
 }
 .article-entry h1,
 .article-entry h2,

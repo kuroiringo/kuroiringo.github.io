@@ -10,12 +10,12 @@
 <p>18-02-13：<br><img src="http://rinpple.oss-cn-beijing.aliyuncs.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6.png" alt="此处输入图片的描述"></p>
 <hr>
 <p>18-02-15：<br>除夕夜，先祝大家新年快乐，狗年大吉，学业顺利，武运昌隆哈哈哈哈！</p>
-<p>然后我们接着就来回忆一下条件概率的概念：条件概率是指A事件在B事件已经发生的条件下，发生的概率，用$$ P(A|B) $$表示，读作B条件下A的概率。如 P(投出1点 | 投出小) 就是指掷骰子时，在已知投出小（1点、2点或3点）的条件下，投出的是1点的概率，结果是1/3。</p>
+<p>然后我们接着就来回忆一下条件概率的概念：条件概率是指A事件在B事件已经发生的条件下，发生的概率，用 P(A|B) 表示，读作B条件下A的概率。如 P(投出1点 | 投出小) 就是指掷骰子时，在已知投出小（1点、2点或3点）的条件下，投出的是1点的概率，结果是1/3。</p>
 <p>接下来我们看看<a href="http://mindhacks.cn/2008/09/21/the-magical-bayesian-method/" target="_blank" rel="external">刘未鹏老师博客</a>里给出的例子，这是一个来自wikipedia的问题：</p>
 <blockquote>
 <p>一所学校里面有 60% 的男生，40% 的女生。男生总是穿长裤，女生则一半穿长裤一半穿裙子。假设你走在校园中，迎面走来一个穿长裤的学生（很不幸的是你高度近似，你只看得见他（她）穿的是否长裤，而无法确定他（她）的性别），你能够推断出他（她）是男生的概率是多大吗？</p>
 </blockquote>
-<p>我脑袋向来不好，所以画了一幅图来帮助理解：<br><img src="http://rinpple.oss-cn-beijing.aliyuncs.com/%E8%B4%9D%E5%8F%B6%E6%96%AF1.jpg" alt="此处输入图片的描述"><br>那么某穿长裤的同学是男生，即 P( boy | pants ) 这个问题，其实就等价于：算出学校里有多少穿长裤的，再从这些人里求出有多少是男生。<br>假设这个学校里人的总数是U。<br>那么就有$$P(Girl|Pants) = P(Girl) <em> P(Pants|Girl) / [P(Boy) </em> P(Pants|Boy) + P(Girl) * P(Pants|Girl)]$$</p>
+<p>我脑袋向来不好，所以画了一幅图来帮助理解：<br><img src="http://rinpple.oss-cn-beijing.aliyuncs.com/%E8%B4%9D%E5%8F%B6%E6%96%AF1.jpg" alt="此处输入图片的描述"><br>那么某穿长裤的同学是男生，即 P( boy | Pants ) 这个问题，其实就等价于：算出学校里有多少穿长裤的，再从这些人里求出有多少是男生。<br>假设这个学校里人的总数是U。<br>显然有 P(boy|Pants) = P(Boy) <em> P(Pants|Boy) / [P(Boy) </em> P(Pants|Boy) + P(Girl) <em> P(Pants|Girl)]。<br>并且上式化简一下也就是： P(Pants,boy) / P(pants)。<br>其一般形式表示为：<br>P(B|A) = P(A|B) </em> P(B) / [P(A|B) <em> P(B) + P(A|~B) </em> P(~B) ]<br>= P(AB) / P(A)<br>这就是贝叶斯公式。</p>
 ]]></content>
       
         

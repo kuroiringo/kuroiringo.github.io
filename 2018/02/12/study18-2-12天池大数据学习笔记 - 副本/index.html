@@ -23,7 +23,7 @@
 <meta property="og:url" content="http://rinpple.com/2018/02/12/study18-2-12天池大数据学习笔记 - 副本/index.html">
 <meta property="og:site_name" content="rinpple">
 <meta property="og:description" content="Hey大家好，好久不见，我是rinpple。这是个人笔记向的一个记录，可能稍微有些杂乱无章。如果大家有兴趣的话可以看一看，当然直接略过这一篇也是没问题的。  TIMELINE：2018-02-12：没有勇气参加数学建模美赛，因此报名参加池新人实战赛o2o优惠券使用预测赛。Down下了数据和一些资料，现在开始学习。然后我得时刻提醒自己，我把所有和这个比赛有关的东西都放在E盘了。遇到贝叶斯模型，依据刘">
-<meta property="og:updated_time" content="2018-02-15T14:53:31.469Z">
+<meta property="og:updated_time" content="2018-02-16T15:21:53.977Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="个人笔记向 | 天池大数据竞赛个人记录">
 <meta name="twitter:description" content="Hey大家好，好久不见，我是rinpple。这是个人笔记向的一个记录，可能稍微有些杂乱无章。如果大家有兴趣的话可以看一看，当然直接略过这一篇也是没问题的。  TIMELINE：2018-02-12：没有勇气参加数学建模美赛，因此报名参加池新人实战赛o2o优惠券使用预测赛。Down下了数据和一些资料，现在开始学习。然后我得时刻提醒自己，我把所有和这个比赛有关的东西都放在E盘了。遇到贝叶斯模型，依据刘">
@@ -304,7 +304,8 @@
 <hr>
 <p><strong>TIMELINE：</strong><br>2018-02-12：<br>没有勇气参加数学建模美赛，因此报名参加池新人实战赛o2o优惠券使用预测赛。Down下了数据和一些资料，现在开始学习。然后我得时刻提醒自己，我把所有和这个比赛有关的东西都放在E盘了。<br>遇到贝叶斯模型，依据<a href="http://mindhacks.cn/2008/09/21/the-magical-bayesian-method/" target="_blank" rel="external">刘未鹏老师博客内容</a>进行学习，并将学习笔记记载于我的另一篇文章：<a href="http://rinpple.win/2018/02/12/study18-2-12%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0%EF%BC%9A%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%A8%A1%E5%9E%8B/" target="_blank" rel="external">学习笔记 | 贝叶斯模型的入门 </a></p>
 <p>2018-02-13：<br>学习绘制流程图与思维导图，偷个懒，用的是<a href="https://www.processon.com/" target="_blank" rel="external">ProcessOn</a>。等会儿还得记得抽出时间阅读IGEM比赛的wiki（晚上八点需要交总结），所以暂时先看到这里。</p>
-<p>2018-02-15：<br>除夕夜。我好像跑偏了方向，研究了好久的图床，从七牛云到又拍云，最后回到阿里云。</p>
+<p>2018-02-15：<br>除夕夜。我好像跑偏了方向，研究了好久的图床，从七牛云到又拍云，最后回到阿里云。继续阅读刘老师博客，回忆起了贝叶斯<del>（尽管浪费了大量时间、做了好些无用功，效率至上吧）</del>。</p>
+<p>2018-02-16:<br>开启了 mathjax 开关，学会向hexo里添加数学公式。需要在主体的配置文件中将 mathjax 设置为 true，再在文章开头加入一行<br>    mathjax: true<br>书写公式的时候，发现有莫名其妙的斜体出现，研究了一下，发现是数学符号和markdown语法冲突，要用 \ 符号进行转义。</p>
 
       
     </div>
@@ -316,7 +317,7 @@
         <p><span>本文标题:</span><a href="/2018/02/12/study18-2-12天池大数据学习笔记 - 副本/">个人笔记向 | 天池大数据竞赛个人记录</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">rinpple</a></p>
         <p><span>发布时间:</span>2018-02-12, 22:54:42</p>
-        <p><span>最后更新:</span>2018-02-15, 22:53:31</p>
+        <p><span>最后更新:</span>2018-02-16, 23:21:53</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/02/12/study18-2-12天池大数据学习笔记 - 副本/" title="个人笔记向 | 天池大数据竞赛个人记录">http://rinpple.com/2018/02/12/study18-2-12天池大数据学习笔记 - 副本/</a>
             <span class="copy-path" data-clipboard-text="原文: http://rinpple.com/2018/02/12/study18-2-12天池大数据学习笔记 - 副本/　　作者: rinpple" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -491,6 +492,27 @@
 
 
 
+
+
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 <div class="scroll" id="scroll">

@@ -16,12 +16,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="rinpple">
-<meta property="og:url" content="http://rinpple.com/tags/读后感/index.html">
+<meta name="description" content="今年寒假初始去北大 IGEM 蹭课时，首次遇到 golden gate 这个单词，几个人在对着 PPT 和 wiki 百科研究了很久，最后求助了外援才将其理解。今天下课时偶然听见同学提到这个单词，然而回忆了半天也没想起来其内容……因此这里趁着热乎赶紧进行记录，以备不时之需。 我们先回顾一下常规方法：若我们拿到一段合成的基因序列，首先 PCR 对其进行扩增，接着需要利用限制性内切酶（如EcoRI ，">
+<meta name="keywords" content="IGEM,biotechnology">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Golden gate assembly ， scarless 的基因组装方式">
+<meta property="og:url" content="http://rinpple.com/2018/03/09/bio18-3-09golden gate method/index.html">
 <meta property="og:site_name" content="rinpple">
+<meta property="og:description" content="今年寒假初始去北大 IGEM 蹭课时，首次遇到 golden gate 这个单词，几个人在对着 PPT 和 wiki 百科研究了很久，最后求助了外援才将其理解。今天下课时偶然听见同学提到这个单词，然而回忆了半天也没想起来其内容……因此这里趁着热乎赶紧进行记录，以备不时之需。 我们先回顾一下常规方法：若我们拿到一段合成的基因序列，首先 PCR 对其进行扩增，接着需要利用限制性内切酶（如EcoRI ，">
+<meta property="og:image" content="http://rinpple.oss-cn-beijing.aliyuncs.com/Standard_assembly_10.jpg?Expires=1520591486&OSSAccessKeyId=TMP.AQEd2ztczYu-LbBbcwrCDVfrzC9QkcwDho6Buz0jTKEDFGnMSejgCwGiLdr1ADAtAhUAgl6rzptiK8Jo4rVcK7IyDJ1udMwCFAkF6iWP255WX8f21--X_8aVSzQW&Signature=alV%2brKdbygxwNbPGj1Xko%2bPUnH0=">
+<meta property="og:image" content="http://rinpple.oss-cn-beijing.aliyuncs.com/untitled.png?Expires=1520593343&OSSAccessKeyId=TMP.AQEd2ztczYu-LbBbcwrCDVfrzC9QkcwDho6Buz0jTKEDFGnMSejgCwGiLdr1ADAtAhUAgl6rzptiK8Jo4rVcK7IyDJ1udMwCFAkF6iWP255WX8f21--X_8aVSzQW&Signature=GIIlEoCO8qF1nUtPFNpGMkDXp60%3D">
+<meta property="og:updated_time" content="2018-03-09T10:03:00.575Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="rinpple">
+<meta name="twitter:title" content="The Golden gate assembly ， scarless 的基因组装方式">
+<meta name="twitter:description" content="今年寒假初始去北大 IGEM 蹭课时，首次遇到 golden gate 这个单词，几个人在对着 PPT 和 wiki 百科研究了很久，最后求助了外援才将其理解。今天下课时偶然听见同学提到这个单词，然而回忆了半天也没想起来其内容……因此这里趁着热乎赶紧进行记录，以备不时之需。 我们先回顾一下常规方法：若我们拿到一段合成的基因序列，首先 PCR 对其进行扩增，接着需要利用限制性内切酶（如EcoRI ，">
+<meta name="twitter:image" content="http://rinpple.oss-cn-beijing.aliyuncs.com/Standard_assembly_10.jpg?Expires=1520591486&OSSAccessKeyId=TMP.AQEd2ztczYu-LbBbcwrCDVfrzC9QkcwDho6Buz0jTKEDFGnMSejgCwGiLdr1ADAtAhUAgl6rzptiK8Jo4rVcK7IyDJ1udMwCFAkF6iWP255WX8f21--X_8aVSzQW&Signature=alV%2brKdbygxwNbPGj1Xko%2bPUnH0=">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -51,7 +59,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Tag: 读后感 | rinpple</title>
+<title>The Golden gate assembly ， scarless 的基因组装方式 | rinpple</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -61,9 +69,9 @@
         fancybox: true,
         animate: false,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
-        isTag: true,
+        isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
@@ -255,56 +263,195 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-bio18-3-09golden gate method" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/02/12/essay18-2-12漫画读后感/" class="archive-article-date">
-      <time datetime="2018-02-12T09:29:18.000Z" itemprop="datePublished">02-12</time>
+    <div class="article-meta">
+      <a href="/2018/03/09/bio18-3-09golden gate method/" class="article-date">
+      <time datetime="2018-03-09T09:29:18.000Z" itemprop="datePublished">2018-03-09</time>
 </a>
 
 
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/12/essay18-2-12漫画读后感/">一点漫画的观后感</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      The Golden gate assembly ， scarless 的基因组装方式
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 
-          
+        
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/essay/">essay</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/读后感/">读后感</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IGEM/">IGEM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/biotechnology/">biotechnology</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>今年寒假初始去北大 IGEM 蹭课时，首次遇到 golden gate 这个单词，几个人在对着 PPT 和 wiki 百科研究了很久，最后求助了外援才将其理解。今天下课时偶然听见同学提到这个单词，然而回忆了半天也没想起来其内容……因此这里趁着热乎赶紧进行记录，以备不时之需。</p>
+<p><strong>我们先回顾一下常规方法：</strong><br>若我们拿到一段合成的基因序列，首先 PCR 对其进行扩增，接着需要利用限制性内切酶（如<em>Eco</em>RI ，其识别位点与切割位点是同一处）对基因片段酶切消化，形成粘性末端，再在连接酶作用下将其与载体连接。而连接得到的新片段很可能被限制酶再切断，降低效率。<br>譬如下边这个过程：<br><img src="http://rinpple.oss-cn-beijing.aliyuncs.com/Standard_assembly_10.jpg?Expires=1520591486&amp;OSSAccessKeyId=TMP.AQEd2ztczYu-LbBbcwrCDVfrzC9QkcwDho6Buz0jTKEDFGnMSejgCwGiLdr1ADAtAhUAgl6rzptiK8Jo4rVcK7IyDJ1udMwCFAkF6iWP255WX8f21--X_8aVSzQW&amp;Signature=alV%2brKdbygxwNbPGj1Xko%2bPUnH0=" alt="此处输入图片的描述"><br> 多的废话我们就不阐述相信大家看图能懂。<br> <em>Xba</em>I 和 <em>Spe</em>I 消化形成的黏性末端虽然不同，但可以配对， 形成一个 8 bp 大小的“疤痕” M ，这个“疤痕”既不能被 <em>Xba</em>I 切断，也不能被 <em>Spe</em>I 切断。这样，下一个片段可以继续组装上去，不用担心把刚组装好的片段切断。这也是 biobrick 组装的常用方式。</p>
+<p><strong>而 Golden gate …</strong><br>Golden gate 克隆主要依赖于 Type IIs 型限制性内切酶和 T4 连接酶，因此它又叫做 Types IIs 克隆。<br>这种酶最大的特点是，其识别位点与切割位点不同，我们以<em>Bsa</em>I 酶为例：<br><img src="http://rinpple.oss-cn-beijing.aliyuncs.com/untitled.png?Expires=1520593343&amp;OSSAccessKeyId=TMP.AQEd2ztczYu-LbBbcwrCDVfrzC9QkcwDho6Buz0jTKEDFGnMSejgCwGiLdr1ADAtAhUAgl6rzptiK8Jo4rVcK7IyDJ1udMwCFAkF6iWP255WX8f21--X_8aVSzQW&amp;Signature=GIIlEoCO8qF1nUtPFNpGMkDXp60%3D" alt="此处输入图片的描述"><br>(图片来自<a href="https://j5.jbei.org/j5manual/pages/23.html" target="_blank" rel="external">这里</a>，侵删)<br>该酶识别的是 GGTCTC 序列，切割的却是 GGTCTC 旁边的序列。举个例子，我们有一段序列如下： </p>
+<blockquote>
+<p>   GGTCTCACCTCA<br>CCAGAGTGGAGT</p>
+</blockquote>
+<p>利用<em>Bsa</em>I 酶切割后得到：</p>
+<blockquote>
+<p>   GGTCTCA<br>CCAGAGTGGAG</p>
+</blockquote>
+<p>同理啦，如果我们有另一段序列：</p>
+<blockquote>
+<p>   GGTCTCTTAGGA<br>CCAGAGAATCCT</p>
+</blockquote>
+<p>切割完成后得到：</p>
+<blockquote>
+<p>   GGTCTCT<br>CCAGAGAATCC</p>
+</blockquote>
+<p>那我们很容易可以想到，这个切割位点上的序列是我们可以自己设计的：只要两个片段切割位点上的序列互补配对，就能连接，它们甚至不需要是回文序列。这样的话，针对多个片段连接的情况，可以通过对切割位点序列的设计，达到定向组装的目的，且更加省时、便利、高准确度，还不会形成“疤痕”。而且由于识别位点和切割位点不同，组装好的新片段中，不会再出现 Type IIs 酶的识别位点，就避免了组装好的片段被误切断，使得组装过程是个不可逆的过程，这一点也是常规方法做不到的。</p>
+<hr>
+<p><strong>参考资料：</strong></p>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Golden_Gate_Cloning" target="_blank" rel="external">wikipedia - Golden Gate Cloning</a></li>
+<li><a href="https://en.wikipedia.org/wiki/BioBrick" target="_blank" rel="external">wikipedia - Biobrick</a></li>
+<li><a href="https://j5.jbei.org/j5manual/pages/23.html" target="_blank" rel="external">The Golden Gate assembly method (and MoClo and GoldenBraid)</a></li>
+</ol>
+
+      
+    </div>
+    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/03/09/bio18-3-09golden gate method/">The Golden gate assembly ， scarless 的基因组装方式</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">rinpple</a></p>
+        <p><span>发布时间:</span>2018-03-09, 17:29:18</p>
+        <p><span>最后更新:</span>2018-03-09, 18:03:00</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/03/09/bio18-3-09golden gate method/" title="The Golden gate assembly ， scarless 的基因组装方式">http://rinpple.com/2018/03/09/bio18-3-09golden gate method/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://rinpple.com/2018/03/09/bio18-3-09golden gate method/　　作者: rinpple" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/02/12/study18-2-12个人学习：贝叶斯模型/">
+                    学习笔记 | 贝叶斯模型的入门
+                </a>
+            </div>
+        
+    </nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-4 i,
+        .toc-level-4 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"The Golden gate assembly ， scarless 的基因组装方式　| rinpple　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+        <section class="youyan" id="comments">
+  <div id="uyan_frame"></div>
+  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2137083"></script>
+</section>
 
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/02/12/study18-2-12个人学习：贝叶斯模型/" title="下一篇: 学习笔记 | 贝叶斯模型的入门">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/03/09/bio18-3-09golden gate method/">The Golden gate assembly ， scarless 的基因组装方式</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/12/study18-2-12个人学习：贝叶斯模型/">学习笔记 | 贝叶斯模型的入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/12/study18-2-12天池大数据学习笔记 - 副本/">个人笔记向 | 天池大数据竞赛个人记录</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/12/essay18-2-12漫画读后感/">一点漫画的观后感</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/31/export18-1-31葡萄酒啤酒黄酒分类/">葡萄酒、啤酒以及黄酒的分类</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/19/essay17-6-19惊蛰水车/">惊蛰 水车</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/19/essay17-6-19吃在四川/">吃在四川</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">

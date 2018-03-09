@@ -3,6 +3,48 @@
   
     
     <entry>
+      <title><![CDATA[The Golden gate assembly ， scarless 的基因组装方式]]></title>
+      <url>/2018/03/09/bio18-3-09golden%20gate%20method/</url>
+      <content type="html"><![CDATA[<p>今年寒假初始去北大 IGEM 蹭课时，首次遇到 golden gate 这个单词，几个人在对着 PPT 和 wiki 百科研究了很久，最后求助了外援才将其理解。今天下课时偶然听见同学提到这个单词，然而回忆了半天也没想起来其内容……因此这里趁着热乎赶紧进行记录，以备不时之需。</p>
+<p><strong>我们先回顾一下常规方法：</strong><br>若我们拿到一段合成的基因序列，首先 PCR 对其进行扩增，接着需要利用限制性内切酶（如<em>Eco</em>RI ，其识别位点与切割位点是同一处）对基因片段酶切消化，形成粘性末端，再在连接酶作用下将其与载体连接。而连接得到的新片段很可能被限制酶再切断，降低效率。<br>譬如下边这个过程：<br><img src="http://rinpple.oss-cn-beijing.aliyuncs.com/Standard_assembly_10.jpg?Expires=1520591486&amp;OSSAccessKeyId=TMP.AQEd2ztczYu-LbBbcwrCDVfrzC9QkcwDho6Buz0jTKEDFGnMSejgCwGiLdr1ADAtAhUAgl6rzptiK8Jo4rVcK7IyDJ1udMwCFAkF6iWP255WX8f21--X_8aVSzQW&amp;Signature=alV%2brKdbygxwNbPGj1Xko%2bPUnH0=" alt="此处输入图片的描述"><br> 多的废话我们就不阐述相信大家看图能懂。<br> <em>Xba</em>I 和 <em>Spe</em>I 消化形成的黏性末端虽然不同，但可以配对， 形成一个 8 bp 大小的“疤痕” M ，这个“疤痕”既不能被 <em>Xba</em>I 切断，也不能被 <em>Spe</em>I 切断。这样，下一个片段可以继续组装上去，不用担心把刚组装好的片段切断。这也是 biobrick 组装的常用方式。</p>
+<p><strong>而 Golden gate …</strong><br>Golden gate 克隆主要依赖于 Type IIs 型限制性内切酶和 T4 连接酶，因此它又叫做 Types IIs 克隆。<br>这种酶最大的特点是，其识别位点与切割位点不同，我们以<em>Bsa</em>I 酶为例：<br><img src="http://rinpple.oss-cn-beijing.aliyuncs.com/untitled.png?Expires=1520593343&amp;OSSAccessKeyId=TMP.AQEd2ztczYu-LbBbcwrCDVfrzC9QkcwDho6Buz0jTKEDFGnMSejgCwGiLdr1ADAtAhUAgl6rzptiK8Jo4rVcK7IyDJ1udMwCFAkF6iWP255WX8f21--X_8aVSzQW&amp;Signature=GIIlEoCO8qF1nUtPFNpGMkDXp60%3D" alt="此处输入图片的描述"><br>(图片来自<a href="https://j5.jbei.org/j5manual/pages/23.html" target="_blank" rel="external">这里</a>，侵删)<br>该酶识别的是 GGTCTC 序列，切割的却是 GGTCTC 旁边的序列。举个例子，我们有一段序列如下： </p>
+<blockquote>
+<p>   GGTCTCACCTCA<br>CCAGAGTGGAGT</p>
+</blockquote>
+<p>利用<em>Bsa</em>I 酶切割后得到：</p>
+<blockquote>
+<p>   GGTCTCA<br>CCAGAGTGGAG</p>
+</blockquote>
+<p>同理啦，如果我们有另一段序列：</p>
+<blockquote>
+<p>   GGTCTCTTAGGA<br>CCAGAGAATCCT</p>
+</blockquote>
+<p>切割完成后得到：</p>
+<blockquote>
+<p>   GGTCTCT<br>CCAGAGAATCC</p>
+</blockquote>
+<p>那我们很容易可以想到，这个切割位点上的序列是我们可以自己设计的：只要两个片段切割位点上的序列互补配对，就能连接，它们甚至不需要是回文序列。这样的话，针对多个片段连接的情况，可以通过对切割位点序列的设计，达到定向组装的目的，且更加省时、便利、高准确度，还不会形成“疤痕”。而且由于识别位点和切割位点不同，组装好的新片段中，不会再出现 Type IIs 酶的识别位点，就避免了组装好的片段被误切断，使得组装过程是个不可逆的过程，这一点也是常规方法做不到的。</p>
+<hr>
+<p><strong>参考资料：</strong></p>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Golden_Gate_Cloning" target="_blank" rel="external">wikipedia - Golden Gate Cloning</a></li>
+<li><a href="https://en.wikipedia.org/wiki/BioBrick" target="_blank" rel="external">wikipedia - Biobrick</a></li>
+<li><a href="https://j5.jbei.org/j5manual/pages/23.html" target="_blank" rel="external">The Golden Gate assembly method (and MoClo and GoldenBraid)</a></li>
+</ol>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> IGEM </tag>
+            
+            <tag> biotechnology </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[学习笔记 | 贝叶斯模型的入门]]></title>
       <url>/2018/02/12/study18-2-12%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0%EF%BC%9A%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%A8%A1%E5%9E%8B/</url>
       <content type="html"><![CDATA[<p>你好，我是rinpple，很快就又见面了。因为参加天池大数据比赛，以及为了再战数学建模国赛的缘故，要开始啃一些以前不愿意碰的硬骨头。这是贝叶斯模型我个人的一个学习笔记，记录于此。</p>

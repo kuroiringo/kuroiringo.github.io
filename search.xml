@@ -73,14 +73,16 @@
     </entry>
     
     <entry>
-      <title><![CDATA[个人笔记向 | 天池大数据竞赛个人记录]]></title>
-      <url>/2018/02/12/study18-2-12%E5%A4%A9%E6%B1%A0%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20/</url>
+      <title><![CDATA[个人笔记向 | 一个略神经质的个人记录]]></title>
+      <url>/2018/02/12/study18-2-12%E4%B8%80%E4%B8%AA%E7%A5%9E%E7%BB%8F%E8%B4%A8%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BA%AA%E5%BD%95%20/</url>
       <content type="html"><![CDATA[<p>Hey大家好，好久不见，我是rinpple。<br>这是个人笔记向的一个记录，可能稍微有些杂乱无章。如果大家有兴趣的话可以看一看，当然直接略过这一篇也是没问题的。</p>
 <hr>
 <p><strong>TIMELINE：</strong><br>2018-02-12：<br>没有勇气参加数学建模美赛，因此报名参加池新人实战赛o2o优惠券使用预测赛。Down下了数据和一些资料，现在开始学习。然后我得时刻提醒自己，我把所有和这个比赛有关的东西都放在E盘了。<br>遇到贝叶斯模型，依据<a href="http://mindhacks.cn/2008/09/21/the-magical-bayesian-method/" target="_blank" rel="external">刘未鹏老师博客内容</a>进行学习，并将学习笔记记载于我的另一篇文章：<a href="http://rinpple.win/2018/02/12/study18-2-12%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0%EF%BC%9A%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%A8%A1%E5%9E%8B/" target="_blank" rel="external">学习笔记 | 贝叶斯模型的入门 </a></p>
 <p>2018-02-13：<br>学习绘制流程图与思维导图，偷个懒，用的是<a href="https://www.processon.com/" target="_blank" rel="external">ProcessOn</a>。等会儿还得记得抽出时间阅读IGEM比赛的wiki（晚上八点需要交总结），所以暂时先看到这里。</p>
 <p>2018-02-15：<br>除夕夜。我好像跑偏了方向，研究了好久的图床，从七牛云到又拍云，最后回到阿里云。继续阅读刘老师博客，回忆起了贝叶斯<del>（尽管浪费了大量时间、做了好些无用功，效率至上吧）</del>。</p>
 <p>2018-02-16:<br>开启了 mathjax 开关，学会向hexo里添加数学公式。需要在主体的配置文件中将 mathjax 设置为 true，再在文章开头加入一行<br>    mathjax: true<br>书写公式的时候，发现有莫名其妙的斜体出现，研究了一下，发现是数学符号和markdown语法冲突，要用 \ 符号进行转义。</p>
+<p>2018-03-09<br>开学的第一个周五，好像做了不少事情。一大早去了电子阅览室，扇贝网学了一早上的英语；征文尝试写了一小段；然后查了关于 Golden gate 的资料，打算更新一个博客，但是 hexo deploy 的时候出了一点问题，没能解决；看了中国大学 mooc 上关于 html5 的课程，在最后半小时内提交了作业，不过没能完全实现预定的效果。</p>
+<p>2018-03-11<br>修复了 hexo deploy 时的错误，乱七八糟各种方法试了一堆也不知道最后是怎么好的，不过大概是 ssh 的缘故吧？想要分享到朋友圈，不过发现会被腾讯 QQ 浏览器自动转码，然后丢失一些内容。听说只要在公众平台添加一下网址就好了，不过前提是网址必须已经备案——问题我的域名不能备案啊！！然后想趁早换个域名，去万网看了一圈发现真贵……就先算了吧。<br>然后注册了第一届<a href="http://www.icbeb.org/Challenge.html" target="_blank" rel="external">生理信号挑战赛</a>，总之先注个册吧（笑）。</p>
 ]]></content>
       
         

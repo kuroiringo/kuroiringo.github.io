@@ -3,6 +3,34 @@
   
     
     <entry>
+      <title><![CDATA[PCR 引物的设计]]></title>
+      <url>/2018/03/17/bio18-4-13%E5%BC%95%E7%89%A9%E7%9A%84%E8%AE%BE%E8%AE%A1/</url>
+      <content type="html"><![CDATA[<p>Hello!<br>好久不见我是 rinpple。虽然说好久不见，但是仔细想想其实根本没有人看我的博客，根本没有人跟我见嘛……<br>emmmmmm这段时间实验很多，稍微有点忙，实验也不甚顺利。托 IGEM 的福，学习了引物设计，也过上了天天跑胶天天 PCR 的生活。尽管带上手套捂上口罩，我觉得我的碱基里还是已经插入了无数奇奇怪怪的物质了。</p>
+<hr>
+<p>那么今天来给大家聊一下引物设计的话题。</p>
+<p><strong>1.什么是引物设计？</strong><br>我们知道在进行 PCR 的时候，体系里需要包含这些物质：模板链、引物、buffer、4种dNTP、ATP、酶；需要经历“解链、退火、延伸”三个主要步骤。解链使 DNA 双链打开，单链暴露出来；退火这一步引物通过碱基互补配对与模板链结合；延伸这一步， 4 种 dNTP 在酶的作用下，逐个连接在引物后边，形成一条新的 DNA 链。<br>而退火所需要的引物，是经过我们自己设计，并送去合成的，它应当可与模板链互补，并易于 PCR 进行。</p>
+<p><strong>2.引物设计的规则：</strong><br>引物长度以 18-25 bp 为佳。<br>解链温度大概 60 ℃。<br>为了保证 PCR 过程中温度的一致性，上引与下引解链温度应当近似。<br>引物的 5 端与 3 端最好都不要有碱基 A 。<br>不要有 GGG 相连，以免出错。<br>引物中间部分 GC 含量高，两段 AT 含量高为最佳。</p>
+<p>满足上述规则，基本上你就能 PCR 出想要的基因。不过就像孔子曾经说过的那样：“实验是充满了玄学和不可预测的过程。”怎么说，还是看人品吧。</p>
+<p><strong>3.实例：</strong><br>我们实验室采用的是 Gibson Assembly，不需要考虑酶切位点和三联密码子的问题。我们以 pSB1C3 质粒插入紫色色素蛋白 amilGFP 为例，需要两对引物（上引＋下引）共 4 个引物。<br>将所需基因序列导入 SnapGene：</p>
+<p><img src="https://rinpple.oss-cn-beijing.aliyuncs.com/QQ%E6%88%AA%E5%9B%BE20180413094615.png" alt="此处输入图片的描述"><br>amilGFP 的序列如下（699 bp）:</p>
+<blockquote>
+<p>Atgtcttattcaaagcatggcatcgtacaagaaatgaagacgaaataccatatggaaggcagtgtcaatggccatgaatttacgatcgaaggtgtaggaactgggtacccttacgaagggaaacagatgtccgaattagtgatcatcaagcctgcgggaaaaccccttccattctcctttgacatactgtcatcagtctttcaatatggaaaccgttgcttcacaaagtacccggcagacatgcctgactatttcaagcaagcattcccagatggaatgtcatatgaaaggtcatttctatttgaggatggagcagttgctacagccagctggaacattcgtctcgaaggaaattgcttcatccacaaatccatctttcatggcgtaaactttcccgctgatggacccgtaatgaaaaagaagacaattgactgggataagtccttcgaaaaaatgactgtgtctaaagaggtgctaagaggtgacgtgactatgtttcttatgctcgaaggaggtggttctcacagatgccaatttcactccacttacaaaacagagaagccggtcacactgcccccgaatcatgtcgtagaacatcaaattgtgaggaccgaccttggccaaagtgcaaaaggctttacagtcaagctggaagcacatgccgcggctcatgttaaccctttgaaggttaaataataa</p>
+</blockquote>
+<p>3.1 色素蛋白引物的设计：<br>色素蛋白上引必须从 ATG 开始，下游从 TTA （TAA 的反向互补）开始，不然会导致目的基因的丢失。</p>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> IGEM </tag>
+            
+            <tag> biotechnology </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[关于合成生物学的一点笔记]]></title>
       <url>/2018/03/17/study18-3-17%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E7%AC%94%E8%AE%B0/</url>
       <content type="html"><![CDATA[<p>啊大家好我是 rinpple ，IGEM 也到了拼命寻找 idea 的阶段，今年到底要做什么项目呢，实在是让人感到困惑。我想要做固氮方面的内容，这是受到 17 年 Botchan Lab Tokyo 实验室的启发。我觉得固氮很有趣，如果可以的话，研究生阶段也想要做这个。<br>然后去图书馆借了一本 Markus Schmidt 先生的专著，是讲合成生物学及其应用的。深受启发，这里做些笔记。<br>个人笔记的缘故，以下的内容比较简略。</p>

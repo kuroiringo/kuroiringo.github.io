@@ -16,20 +16,12 @@
 
 
 
-<meta name="description" content="你好，我是rinpple，很快就又见面了。因为参加天池大数据比赛，以及为了再战数学建模国赛的缘故，要开始啃一些以前不愿意碰的硬骨头。这是贝叶斯模型我个人的一个学习笔记，记录于此。  18-02-13：  除夕夜，先祝大家新年快乐，狗年大吉，学业顺利，武运昌隆哈哈哈哈！ 然后我们接着就来回忆一下条件概率的概念：条件概率是指A事件在B事件已经发生的条件下，发生的概率，用 P(A|B) 表示，读作B条件">
-<meta name="keywords" content="学习笔记,贝叶斯">
-<meta property="og:type" content="article">
-<meta property="og:title" content="学习笔记 | 贝叶斯模型的入门">
-<meta property="og:url" content="http://rinpple.com/2018/02/12/study18-2-12个人学习：贝叶斯模型/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="rinpple">
+<meta property="og:url" content="http://rinpple.com/archives/page/2/index.html">
 <meta property="og:site_name" content="rinpple">
-<meta property="og:description" content="你好，我是rinpple，很快就又见面了。因为参加天池大数据比赛，以及为了再战数学建模国赛的缘故，要开始啃一些以前不愿意碰的硬骨头。这是贝叶斯模型我个人的一个学习笔记，记录于此。  18-02-13：  除夕夜，先祝大家新年快乐，狗年大吉，学业顺利，武运昌隆哈哈哈哈！ 然后我们接着就来回忆一下条件概率的概念：条件概率是指A事件在B事件已经发生的条件下，发生的概率，用 P(A|B) 表示，读作B条件">
-<meta property="og:image" content="http://rinpple.oss-cn-beijing.aliyuncs.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6.png">
-<meta property="og:image" content="http://rinpple.oss-cn-beijing.aliyuncs.com/%E8%B4%9D%E5%8F%B6%E6%96%AF1.jpg">
-<meta property="og:updated_time" content="2018-02-16T15:27:18.412Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学习笔记 | 贝叶斯模型的入门">
-<meta name="twitter:description" content="你好，我是rinpple，很快就又见面了。因为参加天池大数据比赛，以及为了再战数学建模国赛的缘故，要开始啃一些以前不愿意碰的硬骨头。这是贝叶斯模型我个人的一个学习笔记，记录于此。  18-02-13：  除夕夜，先祝大家新年快乐，狗年大吉，学业顺利，武运昌隆哈哈哈哈！ 然后我们接着就来回忆一下条件概率的概念：条件概率是指A事件在B事件已经发生的条件下，发生的概率，用 P(A|B) 表示，读作B条件">
-<meta name="twitter:image" content="http://rinpple.oss-cn-beijing.aliyuncs.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6.png">
+<meta name="twitter:title" content="rinpple">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -59,7 +51,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>学习笔记 | 贝叶斯模型的入门 | rinpple</title>
+<title>Archives | rinpple</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -69,8 +61,8 @@
         fancybox: true,
         animate: false,
         isHome: false,
-        isPost: true,
-        isArchive: false,
+        isPost: false,
+        isArchive: true,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -263,189 +255,60 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
-      <div class="body-wrap"><article id="post-study18-2-12个人学习：贝叶斯模型" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap">
   
-    <div class="article-meta">
-      <a href="/2018/02/12/study18-2-12个人学习：贝叶斯模型/" class="article-date">
-      <time datetime="2018-02-12T15:30:42.000Z" itemprop="datePublished">2018-02-12</time>
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+          <div class="article-meta">
+              <a href="/2017/06/19/essay17-6-19吃在四川/" class="archive-article-date">
+      <time datetime="2017-06-19T03:44:42.000Z" itemprop="datePublished">06-19</time>
 </a>
 
 
-    </div>
+        </div>
+         
   
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      学习笔记 | 贝叶斯模型的入门
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/06/19/essay17-6-19吃在四川/">吃在四川</a>
     </h1>
   
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
-
-        
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习笔记/">学习笔记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/贝叶斯/">贝叶斯</a></li></ul>
-    </div>
-
-        <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
+        <div class="article-info info-on-archive">
           
-        <p>你好，我是rinpple，很快就又见面了。因为参加天池大数据比赛，以及为了再战数学建模国赛的缘故，要开始啃一些以前不愿意碰的硬骨头。这是贝叶斯模型我个人的一个学习笔记，记录于此。</p>
-<hr>
-<p>18-02-13：<br><img src="http://rinpple.oss-cn-beijing.aliyuncs.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6.png" alt="此处输入图片的描述"></p>
-<hr>
-<p>除夕夜，先祝大家新年快乐，狗年大吉，学业顺利，武运昌隆哈哈哈哈！</p>
-<p>然后我们接着就来回忆一下条件概率的概念：条件概率是指A事件在B事件已经发生的条件下，发生的概率，用 P(A|B) 表示，读作B条件下A的概率。如 P(投出1点 | 投出小) 就是指掷骰子时，在已知投出小（1点、2点或3点）的条件下，投出的是1点的概率，结果是1/3。</p>
-<p>接下来我们看看<a href="http://mindhacks.cn/2008/09/21/the-magical-bayesian-method/" target="_blank" rel="external">刘未鹏老师博客</a>里给出的例子，这是一个来自wikipedia的问题：</p>
-<blockquote>
-<p>一所学校里面有 60% 的男生，40% 的女生。男生总是穿长裤，女生则一半穿长裤一半穿裙子。假设你走在校园中，迎面走来一个穿长裤的学生（很不幸的是你高度近似，你只看得见他（她）穿的是否长裤，而无法确定他（她）的性别），你能够推断出他（她）是男生的概率是多大吗？</p>
-</blockquote>
-<p>我脑袋向来不好，所以画了一幅图来帮助理解：<br><img src="http://rinpple.oss-cn-beijing.aliyuncs.com/%E8%B4%9D%E5%8F%B6%E6%96%AF1.jpg" alt="此处输入图片的描述"><br>那么某穿长裤的同学是男生，即 P( boy | Pants ) 这个问题，其实就等价于： 算出学校里有多少穿长裤的，再从这些人里求出有多少是男生。<br>假设这个学校里人的总数是U。<br>显然有:<br> P(boy|Pants) = P(Boy) * P(Pants|Boy) / [P(Boy) * P(Pants|Boy) + P(Girl) * P(Pants|Girl)]<br>并且上式化简一下也就是： P(Pants,boy) / P(pants)<br>其一般形式表示为：<br> P(B|A) = P(A|B) * P(B) / [P(A|B) * P(B) + P(A|~B) * P(~B)]<br> = P(AB) / P(A)<br>这就是贝叶斯公式。<br>根据这个公式容易计算出，例题的答案为3/4。</p>
-<p><strong>1.贝叶斯用于输入法拼写错误纠正：</strong><br>这也是来自刘未鹏老师博客里的内容，我只是进行总结，便于将来自己复习和查阅，如果大家有什么疑问的话，点击<a href="http://mindhacks.cn/2008/09/21/the-magical-bayesian-method/" target="_blank" rel="external">这里</a>阅读原文。<br>贝叶斯方法应用非常广泛，譬如可用于输入法错误纠正。用户输入不存在的单词thet,要想知道他究竟是想要输入the还是they，就要分别求出两种情况的概率。<br>运用贝叶斯公式：<br>P(h | D) = P(h) * P(D | h) / P(D)<br>又因为P(D)为固定值，因此有 P(h | D) 正比于后验概率 P(h) * P(D | h)：<br>P(h | D) ∝ P(h) * P(D | h)<br>其中，h 指代输入 the 或者 they，D 指代输入错误单词 thet。上式的含义为：给定观测数据，一个猜测（如猜测为 the 或 they，其必须是独立的）的好坏，取决于先验概率 ( prior ) 与似然（Likelihood）的乘积。在这个例子中，先验概率P(h)，为这个独立猜测的可能性，也就是 the 词汇本身被使用的可能性/频繁度；似然 P(D | h) 意为这个猜测生成被观测数据的可能性，即想输入 the 却输成了 thet 的可能性。  </p>
 
-      
-    </div>
-    
-  </div>
-  
-    
-    <div class="copyright">
-        <p><span>Title:</span><a href="/2018/02/12/study18-2-12个人学习：贝叶斯模型/">学习笔记 | 贝叶斯模型的入门</a></p>
-        <p><span>Author:</span><a href="/" title="Back to Homepage">rinpple</a></p>
-        <p><span>Created:</span>2018-02-12, 23:30:42</p>
-        <p><span>Updated:</span>2018-02-16, 23:27:18</p>
-        <p>
-            <span>Full URL:</span><a class="post-url" href="/2018/02/12/study18-2-12个人学习：贝叶斯模型/" title="学习笔记 | 贝叶斯模型的入门">http://rinpple.com/2018/02/12/study18-2-12个人学习：贝叶斯模型/</a>
-            <span class="copy-path" data-clipboard-text="From http://rinpple.com/2018/02/12/study18-2-12个人学习：贝叶斯模型/　　By rinpple" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
-            <script> var clipboard = new Clipboard('.copy-path'); </script>
-        </p>
-        <p>
-            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
-        </p>
+          
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/essay/">essay</a></li></ul>
     </div>
 
-
-
-    <nav id="article-nav">
-        
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2018/03/09/bio18-3-09golden gate method/">
-                    The Golden gate assembly ， scarless 的基因组装方式
-                </a>
-            </div>
-        
-        
-            <div id="article-nav-older" class="article-nav-title">
-                <a href="/2018/02/12/study18-2-12一个神经质的个人纪录 /">
-                    个人笔记向 | 一个略神经质的个人记录
-                </a>
-            </div>
-        
-    </nav>
-
-  
-</article>
-
-    <div id="toc" class="toc-article">
-        <strong class="toc-title">Contents</strong>
-        
-            
-        
-    </div>
-    <style>
-        .left-col .switch-btn,
-        .left-col .switch-area {
-            display: none;
-        }
-        .toc-level-4 i,
-        .toc-level-4 ol {
-            display: none !important;
-        }
-    </style>
-
-    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
-
-    <script>
-        yiliaConfig.toc = ["Hide", "Show", !!"false"];
-    </script>
-
-
-
-    
-<div class="share">
-    
-        <div class="bdsharebuttonbox">
-            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
-            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
-            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
-            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
-            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
         </div>
-        <script>
-            window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"学习笔记 | 贝叶斯模型的入门　| rinpple　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        </script>
-    
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+  
+    </div></section>
+  
 
     
-</div>
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/archives/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
+    </nav>
+  
 
-
-
-
-
-
-
-    
-        <section class="youyan" id="comments">
-  <div id="uyan_frame"></div>
-  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2137083"></script>
-</section>
-
-    
-
-
-
-
-    <div class="scroll" id="post-nav-button">
-        
-            <a href="/2018/03/09/bio18-3-09golden gate method/" title="Pre: The Golden gate assembly ， scarless 的基因组装方式">
-                <i class="fa fa-angle-left"></i>
-            </a>
-        
-
-        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
-
-        
-            <a href="/2018/02/12/study18-2-12一个神经质的个人纪录 /" title="Next: 个人笔记向 | 一个略神经质的个人记录">
-                <i class="fa fa-angle-right"></i>
-            </a>
-        
-    </div>
-
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/03/17/bio18-4-13引物的设计/">PCR 引物的设计</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/17/study18-3-17合成生物学笔记/">关于合成生物学的一点笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/09/bio18-3-09golden gate method/">The Golden gate assembly ， scarless 的基因组装方式</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/12/study18-2-12个人学习：贝叶斯模型/">学习笔记 | 贝叶斯模型的入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/12/study18-2-12一个神经质的个人纪录 /">个人笔记向 | 一个略神经质的个人记录</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/12/essay18-2-12漫画读后感/">一点漫画的观后感</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/31/export18-1-31葡萄酒啤酒黄酒分类/">葡萄酒、啤酒以及黄酒的分类</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/19/essay17-6-19惊蛰水车/">惊蛰 水车</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/19/essay17-6-19吃在四川/">吃在四川</a></li></ul>
-
-
-
-
-    <script>
-        
-    </script>
 </div>
       <footer id="footer">
     <div class="outer">

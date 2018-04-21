@@ -3,28 +3,57 @@
   
     
     <entry>
-      <title><![CDATA[PCR 引物的设计]]></title>
-      <url>/2018/03/17/bio18-4-13%E5%BC%95%E7%89%A9%E7%9A%84%E8%AE%BE%E8%AE%A1/</url>
-      <content type="html"><![CDATA[<p>Hello!<br>好久不见我是 rinpple。虽然说好久不见，但是仔细想想其实根本没有人看我的博客，根本没有人跟我见嘛……<br>emmmmmm这段时间实验很多，稍微有点忙，实验也不甚顺利。托 IGEM 的福，学习了引物设计，也过上了天天跑胶天天 PCR 的生活。尽管带上手套捂上口罩，我觉得我的碱基里还是已经插入了无数奇奇怪怪的物质了。</p>
+      <title><![CDATA[ubuntu 入门与学习]]></title>
+      <url>/2018/04/21/study18-4-21ubuntu/</url>
+      <content type="html"><![CDATA[<p>最近的 windows 升级真的烦，一怒之下安装了 Ubuntu 的双系统，开始了折腾。</p>
 <hr>
-<p>那么今天来给大家聊一下引物设计的话题。</p>
-<p><strong>1.什么是引物设计？</strong><br>我们知道在进行 PCR 的时候，体系里需要包含这些物质：模板链、引物、buffer、4种dNTP、ATP、酶；需要经历“解链、退火、延伸”三个主要步骤。解链使 DNA 双链打开，单链暴露出来；退火这一步引物通过碱基互补配对与模板链结合；延伸这一步， 4 种 dNTP 在酶的作用下，逐个连接在引物后边，形成一条新的 DNA 链。<br>而退火所需要的引物，是经过我们自己设计，并送去合成的，它应当可与模板链互补，并易于 PCR 进行。</p>
-<p><strong>2.引物设计的规则：</strong><br>引物长度以 18-25 bp 为佳。<br>解链温度大概 60 ℃。<br>为了保证 PCR 过程中温度的一致性，上引与下引解链温度应当近似。<br>引物的 5 端与 3 端最好都不要有碱基 A 。<br>不要有 GGG 相连，以免出错。<br>引物中间部分 GC 含量高，两段 AT 含量高为最佳。</p>
-<p>满足上述规则，基本上你就能 PCR 出想要的基因。不过就像孔子曾经说过的那样：“实验是充满了玄学和不可预测的过程。”怎么说，还是看人品吧。</p>
-<p><strong>3.实例：</strong><br>我们实验室采用的是 Gibson Assembly，不需要考虑酶切位点和三联密码子的问题。我们以 pSB1C3 质粒插入紫色色素蛋白 amilGFP 为例，需要两对引物（上引＋下引）共 4 个引物。<br>将所需基因序列导入 SnapGene：</p>
-<p><img src="https://rinpple.oss-cn-beijing.aliyuncs.com/QQ%E6%88%AA%E5%9B%BE20180413094615.png" alt="此处输入图片的描述"><br>amilGFP 的序列如下（699 bp）:</p>
-<blockquote>
-<p>Atgtcttattcaaagcatggcatcgtacaagaaatgaagacgaaataccatatggaaggcagtgtcaatggccatgaatttacgatcgaaggtgtaggaactgggtacccttacgaagggaaacagatgtccgaattagtgatcatcaagcctgcgggaaaaccccttccattctcctttgacatactgtcatcagtctttcaatatggaaaccgttgcttcacaaagtacccggcagacatgcctgactatttcaagcaagcattcccagatggaatgtcatatgaaaggtcatttctatttgaggatggagcagttgctacagccagctggaacattcgtctcgaaggaaattgcttcatccacaaatccatctttcatggcgtaaactttcccgctgatggacccgtaatgaaaaagaagacaattgactgggataagtccttcgaaaaaatgactgtgtctaaagaggtgctaagaggtgacgtgactatgtttcttatgctcgaaggaggtggttctcacagatgccaatttcactccacttacaaaacagagaagccggtcacactgcccccgaatcatgtcgtagaacatcaaattgtgaggaccgaccttggccaaagtgcaaaaggctttacagtcaagctggaagcacatgccgcggctcatgttaaccctttgaaggttaaataataa</p>
-</blockquote>
-<p>3.1 色素蛋白引物的设计：<br>色素蛋白上引必须从 ATG 开始，下游从 TTA （TAA 的反向互补）开始，不然会导致目的基因的丢失。</p>
+<p><strong>1.镜像源的替换：</strong></p>
+<p>首先说一下我的版本是 ubuntu 16.04.</p>
+<p>在 terminal 下利用“sudo apt install XX”安装软件总是失败，一直显示无法定位软件包。谷歌了一圈，大概意思是说需要更新镜像源？作为一个计算机小白，照着别人的 blog 纠结了好一会儿也没照着他们的方法实现，最后发现哪有那么麻烦：系统设置-软件和更新-下载自···随便选择一个镜像网站即可。</p>
+<p><strong>2.开启热点以供手机使用：</strong></p>
+<p>这个也是折腾了很久，最后发现 ubuntu 16.04 可以非常方便的实现。</p>
+<p>右上角网络连接上单击-编辑连接-增加-wifi，然后点击新建。里边的设置基本上不需要怎么动，输入 wifi 名称，设置一个密码（选用WPA以及WPA 个人），单击确认。随后在右上角网络-开启新的 wifi 连接-选则刚刚新建的wifi。</p>
+<p><strong>3.文本编辑器：</strong></p>
+<p>我因为需要更新博客，要用到 markdown 文本编辑器的缘故，大概安装了几个。<br>我现在正使用的是 vim 编辑器，此外还安装了 retext 和 gedit，在我看来差别不大。</p>
+<p>vim 编辑器：<br>打开：vim filename<br>root权限打开（大概）：sudo vim filenam<br>插入模式：进入 vim 后按 i 键<br>保存退出 vim ： esc - 冒号 - WQ<br>不保存退出： esc - 冒号 - q！<br>（退出命令不仅这两个，具体自行百度）</p>
 ]]></content>
       
         
         <tags>
             
-            <tag> IGEM </tag>
+            <tag> 学习笔记 </tag>
             
-            <tag> biotechnology </tag>
+            <tag> ubuntu </tag>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[ubuntu 入门与学习]]></title>
+      <url>/2018/04/21/study18-4-21ubuntu%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
+      <content type="html"><![CDATA[<p>最近的 windows 升级真的烦，一怒之下安装了 Ubuntu 的双系统，开始了新的折腾之路。</p>
+<p><strong>1.镜像源的替换：</strong></p>
+<p>首先说一下我的版本是 ubuntu 16.04.</p>
+<p>在 terminal 下利用“sudo apt install XX”安装软件总是失败，一直显示无法定位软件包。谷歌了一圈，大概意思是说需要更新镜像源？作为一个计算机小白，照着别人的 blog 纠结了好一会儿也没照着他们的方法实现，最后发现哪有那么麻烦：系统设置-软件和更新-下载自···随便选择一个镜像网站即可。</p>
+<p><strong>2.开启热点以供手机使用：</strong></p>
+<p>这个也是折腾了很久，最后发现 ubuntu 16.04 可以非常方便的实现。</p>
+<p>右上角网络连接上单击-编辑连接-增加-wifi，然后点击新建。里边的设置基本上不需要怎么动，输入 wifi 名称，设置一个密码（选用WPA以及WPA 个人），单击确认。随后在右上角网络-开启新的 wifi 连接-选则刚刚新建的wifi。</p>
+<p><strong>3.文本编辑器：</strong></p>
+<p>我因为需要更新博客，要用到 markdown 文本编辑器的缘故，大概安装了几个。<br>我现在正使用的是 vim 编辑器，此外还安装了 retext 和 gedit，在我看来差别不大。</p>
+<p>vim 编辑器：<br>打开：vim filename<br>root权限打开（大概）：sudo vim filenam<br>插入模式：进入 vim 后按 i 键<br>保存退出 vim ： esc - 冒号 - WQ<br>不保存退出： esc - 冒号 - q！<br>（退出命令不仅这两个，具体自行百度）  </p>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> 学习笔记 </tag>
+            
+            <tag> ubuntu </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
         
@@ -47,6 +76,34 @@
             <tag> 个人笔记 </tag>
             
             <tag> 合成生物学 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PCR 引物的设计]]></title>
+      <url>/2018/03/17/bio18-4-13%E5%BC%95%E7%89%A9%E7%9A%84%E8%AE%BE%E8%AE%A1/</url>
+      <content type="html"><![CDATA[<p>Hello!<br>好久不见我是 rinpple。虽然说好久不见，但是仔细想想其实根本没有人看我的博客，根本没有人跟我见嘛……<br>emmmmmm这段时间实验很多，稍微有点忙，实验也不甚顺利。托 IGEM 的福，学习了引物设计，也过上了天天跑胶天天 PCR 的生活。尽管带上手套捂上口罩，我觉得我的碱基里还是已经插入了无数奇奇怪怪的物质了。</p>
+<hr>
+<p>那么今天来给大家聊一下引物设计的话题。</p>
+<p><strong>1.什么是引物设计？</strong><br>我们知道在进行 PCR 的时候，体系里需要包含这些物质：模板链、引物、buffer、4种dNTP、ATP、酶；需要经历“解链、退火、延伸”三个主要步骤。解链使 DNA 双链打开，单链暴露出来；退火这一步引物通过碱基互补配对与模板链结合；延伸这一步， 4 种 dNTP 在酶的作用下，逐个连接在引物后边，形成一条新的 DNA 链。<br>而退火所需要的引物，是经过我们自己设计，并送去合成的，它应当可与模板链互补，并易于 PCR 进行。</p>
+<p><strong>2.引物设计的规则：</strong><br>引物长度以 18-25 bp 为佳。<br>解链温度大概 60 ℃。<br>为了保证 PCR 过程中温度的一致性，上引与下引解链温度应当近似。<br>引物的 5 端与 3 端最好都不要有碱基 A 。<br>不要有 GGG 相连，以免出错。<br>引物中间部分 GC 含量高，两段 AT 含量高为最佳。</p>
+<p>满足上述规则，基本上你就能 PCR 出想要的基因。不过就像孔子曾经说过的那样：“实验是充满了玄学和不可预测的过程。”怎么说，还是看人品吧。</p>
+<p><strong>3.实例：</strong><br>我们实验室采用的是 Gibson Assembly，不需要考虑酶切位点和三联密码子的问题。我们以 pSB1C3 质粒插入紫色色素蛋白 amilGFP 为例，需要两对引物（上引＋下引）共 4 个引物。<br>将所需基因序列导入 SnapGene：</p>
+<p><img src="https://rinpple.oss-cn-beijing.aliyuncs.com/QQ%E6%88%AA%E5%9B%BE20180413094615.png" alt="此处输入图片的描述"><br>amilGFP 的序列如下（699 bp）:</p>
+<blockquote>
+<p>Atgtcttattcaaagcatggcatcgtacaagaaatgaagacgaaataccatatggaaggcagtgtcaatggccatgaatttacgatcgaaggtgtaggaactgggtacccttacgaagggaaacagatgtccgaattagtgatcatcaagcctgcgggaaaaccccttccattctcctttgacatactgtcatcagtctttcaatatggaaaccgttgcttcacaaagtacccggcagacatgcctgactatttcaagcaagcattcccagatggaatgtcatatgaaaggtcatttctatttgaggatggagcagttgctacagccagctggaacattcgtctcgaaggaaattgcttcatccacaaatccatctttcatggcgtaaactttcccgctgatggacccgtaatgaaaaagaagacaattgactgggataagtccttcgaaaaaatgactgtgtctaaagaggtgctaagaggtgacgtgactatgtttcttatgctcgaaggaggtggttctcacagatgccaatttcactccacttacaaaacagagaagccggtcacactgcccccgaatcatgtcgtagaacatcaaattgtgaggaccgaccttggccaaagtgcaaaaggctttacagtcaagctggaagcacatgccgcggctcatgttaaccctttgaaggttaaataataa</p>
+</blockquote>
+<p>3.1 色素蛋白引物的设计：<br>色素蛋白上引必须从 ATG 开始，下游从 TTA （TAA 的反向互补）开始，不然会导致目的基因的丢失。</p>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> IGEM </tag>
+            
+            <tag> biotechnology </tag>
             
         </tags>
         
@@ -108,7 +165,7 @@
 <p>一所学校里面有 60% 的男生，40% 的女生。男生总是穿长裤，女生则一半穿长裤一半穿裙子。假设你走在校园中，迎面走来一个穿长裤的学生（很不幸的是你高度近似，你只看得见他（她）穿的是否长裤，而无法确定他（她）的性别），你能够推断出他（她）是男生的概率是多大吗？</p>
 </blockquote>
 <p>我脑袋向来不好，所以画了一幅图来帮助理解：<br><img src="http://rinpple.oss-cn-beijing.aliyuncs.com/%E8%B4%9D%E5%8F%B6%E6%96%AF1.jpg" alt="此处输入图片的描述"><br>那么某穿长裤的同学是男生，即 P( boy | Pants ) 这个问题，其实就等价于： 算出学校里有多少穿长裤的，再从这些人里求出有多少是男生。<br>假设这个学校里人的总数是U。<br>显然有:<br> P(boy|Pants) = P(Boy) * P(Pants|Boy) / [P(Boy) * P(Pants|Boy) + P(Girl) * P(Pants|Girl)]<br>并且上式化简一下也就是： P(Pants,boy) / P(pants)<br>其一般形式表示为：<br> P(B|A) = P(A|B) * P(B) / [P(A|B) * P(B) + P(A|~B) * P(~B)]<br> = P(AB) / P(A)<br>这就是贝叶斯公式。<br>根据这个公式容易计算出，例题的答案为3/4。</p>
-<p><strong>1.贝叶斯用于输入法拼写错误纠正：</strong><br>这也是来自刘未鹏老师博客里的内容，我只是进行总结，便于将来自己复习和查阅，如果大家有什么疑问的话，点击<a href="http://mindhacks.cn/2008/09/21/the-magical-bayesian-method/" target="_blank" rel="external">这里</a>阅读原文。<br>贝叶斯方法应用非常广泛，譬如可用于输入法错误纠正。用户输入不存在的单词thet,要想知道他究竟是想要输入the还是they，就要分别求出两种情况的概率。<br>运用贝叶斯公式：<br>P(h | D) = P(h) * P(D | h) / P(D)<br>又因为P(D)为固定值，因此有 P(h | D) 正比于后验概率 P(h) * P(D | h)：<br>P(h | D) ∝ P(h) * P(D | h)<br>其中，h 指代输入 the 或者 they，D 指代输入错误单词 thet。上式的含义为：给定观测数据，一个猜测（如猜测为 the 或 they，其必须是独立的）的好坏，取决于先验概率 ( prior ) 与似然（Likelihood）的乘积。在这个例子中，先验概率P(h)，为这个独立猜测的可能性，也就是 the 词汇本身被使用的可能性/频繁度；似然 P(D | h) 意为这个猜测生成被观测数据的可能性，即想输入 the 却输成了 thet 的可能性。  </p>
+<p><strong>例子：贝叶斯用于输入法拼写错误纠正：</strong><br>这也是来自刘未鹏老师博客里的内容，我只是进行总结，便于将来自己复习和查阅，如果大家有什么疑问的话，点击<a href="http://mindhacks.cn/2008/09/21/the-magical-bayesian-method/" target="_blank" rel="external">这里</a>阅读原文。<br>贝叶斯方法应用非常广泛，譬如可用于输入法错误纠正。用户输入不存在的单词thet,要想知道他究竟是想要输入the还是they，就要分别求出两种情况的概率。<br>运用贝叶斯公式：<br>P(h | D) = P(h) * P(D | h) / P(D)<br>又因为P(D)为固定值，因此有 P(h | D) 正比于后验概率 P(h) * P(D | h)：<br>P(h | D) ∝ P(h) * P(D | h)<br>其中，h 指代输入 the 或者 they，D 指代输入错误单词 thet。上式的含义为：给定观测数据，一个猜测（如猜测为 the 或 they，其必须是独立的）的好坏，取决于先验概率 ( prior ) 与似然（Likelihood）的乘积。在这个例子中，先验概率P(h)，为这个独立猜测的可能性，也就是 the 词汇本身被使用的可能性/频繁度；似然 P(D | h) 意为这个猜测生成被观测数据的可能性，即想输入 the 却输成了 thet 的可能性。  </p>
 ]]></content>
       
         
